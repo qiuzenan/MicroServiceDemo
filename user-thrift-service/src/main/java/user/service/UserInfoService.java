@@ -11,7 +11,7 @@ import user.mapper.UserMapper;
 public class UserInfoService implements UserService.Iface{
 
     @Autowired
-    private UserMapper userMapper;
+    public UserMapper userMapper;
 
     @Override
     public UserInfo getUserById(int id) throws TException {
